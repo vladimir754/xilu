@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+header {
+    background-color: #037127;
+    padding: 1rem 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+.donate-button {
+    background-color: #ff6600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+}
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    padding: 4rem 2rem;
+    background-color: white;
+    margin: 1rem 0;
+}
+.about-text, .mission-vision, .join-section, .donate-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about-section img, .mission-section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 2rem auto;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.mission, .vision {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.icon {
+    width: 40px;  /* Tamaño aún más pequeño */
+    margin-bottom: 1rem;
+}
+
+.animated-icon {
+    animation: bounce 2s infinite ease-in-out;  /* Animación suave */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);  /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1);  /* Ligero crecimiento (10%) */
+    }
+}
+
+button {
+    background-color: #146600;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+button:hover {
+    background-color: #00ff08;
+}
+
+.icon {
+    width: 40px;  /* Tamaño pequeño, unificado */
+    margin-bottom: 1rem;
+}
+
+.animated-icon {
+    animation: bounce 2s infinite ease-in-out;  /* Animación unificada */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);  /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.1);  /* Ligero crecimiento del 10% */
+    }
+}
+
+/* Nuevos estilos para la sección de galería */
+.gallery-section {
+    background-color: #e6f7ff;  /* Fondo suave */
+    padding: 4rem 2rem;
+}
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+.gallery-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+.image-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.image-collage img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.more-projects-button {
+    background-color: #006603;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.more-projects-button:hover {
+    background-color: #00ff0d;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+.imglogo {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 20px; /* A 20px desde la parte superior */
+    left: 50px; /* A 20px desde el borde izquierdo */
+    width: 50px; /* Establece un tamaño pequeño */
+    height: auto; /* Mantiene la relación de aspecto */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar profundidad */
+}
+.hero1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: white;
+}
+.hero-text1 {
+    background: rgba(42, 178, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+}
+/* Estilos generales para la sección */
+.hero2 {
+    text-align: center; /* Centra el título */
+    padding: 20px;
+}
+
+/* Contenedor de las imágenes */
+.image-gallery2 {
+    display: flex; /* Usa Flexbox para distribuir las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 80px; /* Espaciado mayor entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en nuevas filas si es necesario */
+    margin-top: 20px;
+}
+
+/* Estilo para cada imagen */
+.image-item2 {
+    text-align: center; /* Centra el texto debajo de cada imagen */
+    width: 800px; /* Aumento aún más el ancho de cada imagen para que sea más grande */
+    margin-bottom: 40px; /* Espacio mayor entre la imagen y el texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade transición para efectos de hover */
+}
+
+/* Estilo de las imágenes */
+.image-item2 img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 8px; /* Redondea las esquinas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Efecto de hover para las imágenes */
+.image-item2 img:hover {
+    transform: scale(1.6); /* Agranda la imagen un 30% */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
+/* Estilo para los títulos debajo de las imágenes */
+.image-item2 figcaption {
+    padding: 10px;
+    background-color: brown;
+    color: ghostwhite;
+    font-size: 18px; /* Aumento el tamaño del texto para hacerlo más legible */
+    margin-top: 10px;
+}
